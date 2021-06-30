@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="u1" prefHeight="483.0" prefWidth="612.0" style="-fx-background-color: #f8fbff; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 1; -fx-border-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.AdminCon.Controls">
+   <children>
+      <Label alignment="BASELINE_LEFT" layoutX="22.0" layoutY="21.0" prefHeight="27.0" prefWidth="570.0" style="-fx-background-color: #2298f2;" text="Controls" textFill="WHITE">
+         <font>
+            <Font name="Lato Heavy" size="30.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <TabPane layoutX="27.0" layoutY="71.0" prefHeight="385.0" prefWidth="560.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Add Students">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="206.0" layoutY="22.0" text="Students Applied">
+                           <font>
+                              <Font name="Lato Light" size="20.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="AdmissionTable" layoutX="-1.0" layoutY="100.0" prefHeight="200.0" prefWidth="560.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+                          <columns>
+                            <TableColumn fx:id="name" prefWidth="99.0" text="Name" />
+                            <TableColumn fx:id="dob" prefWidth="87.0" text="DOB" />
+                              <TableColumn fx:id="email" prefWidth="93.0" text="Email" />
+                              <TableColumn fx:id="Mmarks" prefWidth="117.0" text="Metric Marks" />
+                              <TableColumn fx:id="Imarks" prefWidth="96.0" text="Inter Marks" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Add Books">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="34.0" text="ISBN:">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="66.0" text="Author:">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="95.0" text="Ttile:">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="15.0" layoutY="124.0" text="Edition:">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="15.0" layoutY="152.0" text="Publisher Name:">
+                           <font>
+                              <Font name="Roboto Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="isbn" layoutX="67.0" layoutY="31.0" />
+                        <TextField fx:id="author" layoutX="67.0" layoutY="63.0" />
+                        <TextField fx:id="title" layoutX="67.0" layoutY="92.0" />
+                        <TextField fx:id="edition" layoutX="67.0" layoutY="121.0" />
+                        <TextField fx:id="publisher" layoutX="126.0" layoutY="149.0" />
+                        <JFXButton buttonType="RAISED" layoutX="385.0" layoutY="59.0" onAction="#AddBook" prefHeight="57.0" prefWidth="115.0" ripplerFill="RED" style="-fx-border-width: 5; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;" text="Add Book">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <TableView fx:id="Abooks" layoutX="10.0" layoutY="198.0" prefHeight="144.0" prefWidth="541.0">
+                           <columns>
+                              <TableColumn fx:id="isbn1" prefWidth="82.0" text="ISBN" />
+                              <TableColumn fx:id="title1" prefWidth="124.0" text="Title" />
+                              <TableColumn fx:id="edt" prefWidth="87.0" text="Edition" />
+                              <TableColumn fx:id="author1" prefWidth="114.0" text="Author" />
+                              <TableColumn fx:id="publ" prefWidth="133.0" text="Publisher" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

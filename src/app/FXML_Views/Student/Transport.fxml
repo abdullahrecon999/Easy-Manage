@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="u1" prefHeight="483.0" prefWidth="612.0" style="-fx-background-color: #f8fbff; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 1; -fx-border-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.StudentCon.Transport">
+   <children>
+      <Label alignment="BASELINE_LEFT" layoutX="22.0" layoutY="21.0" prefHeight="27.0" prefWidth="570.0" style="-fx-background-color: #2298f2;" text="Transport" textFill="WHITE">
+         <font>
+            <Font name="Lato Heavy" size="30.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <JFXButton fx:id="BusReg" buttonType="RAISED" layoutX="38.0" layoutY="88.0" onAction="#Register" ripplerFill="BLACK" style="-fx-border-color: black; -fx-border-radius: 2;" text="Register for Bus" />
+      <JFXButton fx:id="Cancel" buttonType="RAISED" layoutX="38.0" layoutY="127.0" onAction="#RemoveBus" ripplerFill="BLACK" style="-fx-border-color: black; -fx-border-radius: 2;" text="Cancel Registeration" />
+      <Line endX="-222.0" endY="-20.0" layoutX="251.0" layoutY="180.0" startX="-222.0" startY="-99.0" />
+      <Label fx:id="RegLable" layoutX="446.0" layoutY="26.0" style="-fx-border-width: 1; -fx-border-color: #ff7676; -fx-padding: 4;" text="Bus Not Registered" textFill="#ff7676">
+         <font>
+            <Font name="Lato Medium" size="15.0" />
+         </font>
+      </Label>
+      <TitledPane fx:id="RegData" animated="false" layoutX="28.0" layoutY="221.0" prefHeight="252.0" prefWidth="561.0" text="Registeration Data">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="30.0" text="Select Route">
+                     <font>
+                        <Font name="Lato Semibold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="83.0" text="Select Bus Size">
+                     <font>
+                        <Font name="Lato Semibold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="Routes" layoutX="129.0" layoutY="27.0" prefHeight="24.0" prefWidth="80.0" />
+                  <JFXComboBox fx:id="Sizes" layoutX="129.0" layoutY="80.0" prefHeight="24.0" prefWidth="124.0" />
+                  <Label layoutX="292.0" layoutY="35.0" text="Pickup Location:">
+                     <font>
+                        <Font name="Lato Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="292.0" layoutY="66.0" text="Pickup Time:">
+                     <font>
+                        <Font name="Lato Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="292.0" layoutY="97.0" text="Drop-off Time:">
+                     <font>
+                        <Font name="Lato Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="292.0" layoutY="127.0" text="Driver Name:">
+                     <font>
+                        <Font name="Lato Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="location" layoutX="398.0" layoutY="34.0" text="Test" textFill="#1aab00">
+                     <font>
+                        <Font name="Lato Light Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ptime" layoutX="398.0" layoutY="66.0" text="Test" textFill="#1aab00">
+                     <font>
+                        <Font name="Lato Light Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dtime" layoutX="398.0" layoutY="97.0" text="Test" textFill="#1aab00">
+                     <font>
+                        <Font name="Lato Light Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dname" layoutX="398.0" layoutY="127.0" text="Test" textFill="#1aab00">
+                     <font>
+                        <Font name="Lato Light Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="Submit" buttonType="RAISED" layoutX="23.0" layoutY="189.0" onAction="#SubmitRecord" ripplerFill="#72f25c" style="-fx-border-width: 1; -fx-border-color: #72f25c;" text="Register">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="292.0" layoutY="158.0" text="Assigned Bus No.:">
+                     <font>
+                        <Font name="Lato Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="busno" layoutX="411.0" layoutY="158.0" text="Test" textFill="#1aab00">
+                     <font>
+                        <Font name="Lato Light Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Label layoutX="443.0" layoutY="72.0" text="Assigned Bus No.:">
+         <font>
+            <Font name="Lato Light" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="busno1" layoutX="557.0" layoutY="72.0" text="Test" textFill="#1aab00">
+         <font>
+            <Font name="Lato Heavy Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

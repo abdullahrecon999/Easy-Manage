@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="900.0" styleClass="parent" stylesheets="@../StyleSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.Controller">
+   <children>
+      <Polygon fill="#2298f2cc" layoutX="46.0" layoutY="509.0" points="-38.0, 31.0, -23.0, 171.0, 862.0, 31.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <Polygon fill="#2298f2cc" points="1.0, 140.0, 894.0, 140.0, 884.0, 0.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" />
+      <Pane layoutX="1.0" layoutY="140.0" prefHeight="400.0" prefWidth="900.0" styleClass="pane">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="203.0" onAction="#open_signup" prefHeight="34.0" prefWidth="82.0" ripplerFill="WHITE" styleClass="signup" text="Sign up" />
+            <JFXButton buttonType="RAISED" layoutX="623.0" layoutY="205.0" onAction="#open_login" prefHeight="37.0" prefWidth="76.0" ripplerFill="#f72020" styleClass="signup" text="Login" />
+            <Label layoutX="21.0" layoutY="98.0" text="Dont Have Any Account?" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="136.0" prefHeight="61.0" prefWidth="205.0" text="Make an account now by clicking the button bellow." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="624.0" layoutY="100.0" text="Already have an Account?" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="623.0" layoutY="138.0" prefHeight="61.0" prefWidth="205.0" text="Make an account now by clicking the button bellow." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <VBox fx:id="vbox" layoutX="10.0" layoutY="-38.0" prefHeight="480.0" prefWidth="480.0" styleClass="vbox" />
+         </children>
+      </Pane>
+      <Label layoutX="27.0" layoutY="592.0" prefHeight="69.0" prefWidth="210.0" styleClass="desc" stylesheets="@../StyleSheet/Style.css" text="Easy-Manage system created by Abdullah Mohammad Shafique -- 007" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Lato Light Italic" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="CloseButton" layoutX="852.0" layoutY="20.0" onAction="#close" ripplerFill="#206af7" styleClass="close_button" />
+   </children>
+</AnchorPane>

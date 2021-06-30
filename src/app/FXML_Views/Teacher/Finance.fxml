@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="u1" prefHeight="483.0" prefWidth="612.0" style="-fx-background-color: #f8fbff; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 1; -fx-border-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.TeacherCon.Finance">
+   <children>
+      <Label alignment="BASELINE_LEFT" layoutX="22.0" layoutY="21.0" prefHeight="27.0" prefWidth="570.0" style="-fx-background-color: #2298f2;" text="Finance" textFill="WHITE">
+         <font>
+            <Font name="Lato Heavy" size="30.0" />
+         </font>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label fx:id="Banner" layoutX="231.0" layoutY="87.0" style="-fx-background-color: green; -fx-border-width: 4; -fx-border-color: #2298f2; -fx-background-radius: 10; -fx-padding: 4;" text="Salary Payed" textFill="WHITE">
+         <font>
+            <Font name="Roboto Medium" size="23.0" />
+         </font>
+      </Label>
+      <TitledPane animated="false" layoutX="171.0" layoutY="157.0" prefHeight="170.0" prefWidth="273.0" text="Payment Information">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="145.0" prefWidth="295.0">
+               <children>
+                  <Label layoutX="8.0" layoutY="26.0" text="Amount Payed:">
+                     <font>
+                        <Font name="Roboto Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="52.0" text="Payment Date:">
+                     <font>
+                        <Font name="Roboto Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="80.0" text="Type of Payment:">
+                     <font>
+                        <Font name="Roboto Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="P_amount" layoutX="126.0" layoutY="26.0" text="00" />
+                  <Label fx:id="P_date" layoutX="126.0" layoutY="52.0" text="00" />
+                  <Label fx:id="P_type" layoutX="126.0" layoutY="80.0" text="NA" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</Pane>

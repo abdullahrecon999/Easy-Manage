@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Main-Class: app.Launcher
+Class-Path: ojdbc5.jar src.zip javafx-swt.jar javafx.web.jar javafx.base
+ .jar javafx.fxml.jar javafx.media.jar javafx.swing.jar javafx.controls.
+ jar javafx.graphics.jar src.zip javafx-swt.jar javafx.web.jar javafx.ba
+ se.jar javafx.fxml.jar javafx.media.jar javafx.swing.jar javafx.control
+ s.jar javafx.graphics.jar jfoenix-9.0.10.jar fontawesomefx-8.9.jar java
+ fx-fxml-13.jar javafx-fxml-13-linux.jar javafx-controls-13.jar javafx-c
+ ontrols-13-linux.jar javafx-graphics-13.jar javafx-graphics-13-linux.ja
+ r javafx-base-13.jar javafx-base-13-linux.jar ojdbc5.jar
+

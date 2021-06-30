@@ -1,0 +1,59 @@
+
+.parent{
+    -fx-background-color: transparent;
+}
+.pane {
+    -fx-background-color: #2196f3;
+}
+.signup{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #11e431;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+.vbox{
+    -fx-background-color: #ffffff;
+}
+
+.blue-panel{
+    -fx-background-color: #151928;
+}
+
+.hbox{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.close_button{
+    -fx-background-radius: 50%;;
+    -fx-border-radius: 50%;
+    -fx-background-color: red;
+    -fx-min-width: 20px;
+    -fx-min-height: 20px;
+    -fx-max-width: 20px;
+    -fx-max-height: 20px;
+}
+
+.desc{
+    -fx-text-fill: #000000;
+}
+
+.PayFee {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+

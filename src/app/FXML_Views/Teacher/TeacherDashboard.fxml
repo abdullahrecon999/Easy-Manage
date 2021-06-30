@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="800.0" style="-fx-background-color: #EADDCA;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.TeacherDCon">
+   <children>
+      <VBox layoutY="36.0" prefHeight="490.0" prefWidth="202.0" style="-fx-background-color: #EADDCA; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icons/Teacher.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="40.0" top="10.0" />
+               </VBox.margin></ImageView>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="20.0" onMouseClicked="#LoadU1" prefHeight="34.0" prefWidth="206.0" text="Profile">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Icons/Profilw.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="20.0" onMouseClicked="#LoadU4" prefHeight="34.0" prefWidth="206.0" text="Finance">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Icons/Finance.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane fx:id="DisplayPane" layoutX="186.0" layoutY="36.0" prefHeight="483.0" prefWidth="612.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10; -fx-border-width: 2; -fx-border-color: #53f270;" />
+      <Pane layoutX="-2.0" layoutY="-1.0" prefHeight="33.0" prefWidth="806.0">
+         <children>
+            <Label layoutX="8.0" prefHeight="36.0" prefWidth="262.0" style="-fx-effect: dropshadow( one-pass-box ,   #53f270   , 4 , 0.9 , -2 ,0 );" text="Teacher Dashboard">
+               <font>
+                  <Font name="Roboto Medium" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="766.0" layoutY="3.0" onMouseClicked="#CloseSD" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Icons/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
